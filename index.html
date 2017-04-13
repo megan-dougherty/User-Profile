@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link href="https://fonts.googleapis.com/css?family=Alegreya" rel="stylesheet">
+		<link rel="stylesheet" href="css/main.css">
+	</head>
+	<body>
+	 
+    	<div id="newProfile">
+    	<div id="newProfileBackground">
+    		<h1>Sign Up Here!</h1>
+
+			<form>
+				<!-- NAME -->
+				<div class="form-group">
+					<input type="text" id="userfname" class="form-control" placeholder="First Name">
+					<input type="text" id="userlname" class="form-control" placeholder="Last Name">
+				</div>
+				<!-- GENDER -->
+				<div class="form-group">
+					Gender: 
+					<label class="radio-inline">
+					  <input type="radio" name="radio1" class="userGender" value="Male"> Male
+					</label>
+					<label class="radio-inline">
+					  <input type="radio" name="radio1" class="userGender" value="Female"> Female
+					</label>
+				</div>
+				<!-- EMAIL -->
+				<div class="form-group">
+					<input type="email" id="userEmail" class="form-control" placeholder="Email Address">
+				</div>
+				<!-- PHONE NUMBER -->
+				<div class="form-group">
+					<input type="number" id="userPhone" class="form-control" placeholder="Phone Number">
+				</div>
+				<!-- FAVORITE PRIMARY COLOR -->
+				<div class="form-group">
+					<select class="form-control">
+						<option value="" class="userColor">Select your favorite color</option>
+						<option value="Red" class="userColor">Red</option>
+						<option value="Green" class="userColor">Green</option>
+						<option value="Blue" class="userColor">Blue</option>
+					</select>
+				</div>
+				<!-- CONTINENT OF BIRTH -->
+				<div class="form-group">
+					Continent of birth: 
+					<br>
+					<label class="radio-inline">
+					  <input type="radio" name="radio2" class="userBirth" value="Africa"> Africa
+					</label>
+					<label class="radio-inline">
+					  <input type="radio" name="radio2" class="userBirth" value="Asia"> Asia
+					</label>
+					<label class="radio-inline">
+					  <input type="radio" name="radio2" class="userBirth" value="Australia"> Australia
+					</label>
+					<label class="radio-inline">
+					  <input type="radio" name="radio2" class="userBirth" value="Europe"> Europe
+					</label>
+					<label class="radio-inline">
+					  <input type="radio" name="radio2" class="userBirth" value="North America"> North America
+					</label>
+					<label class="radio-inline">
+					  <input type="radio" name="radio2" class="userBirth" value="South America"> South America
+					</label>
+				</div>
+				<button id="sendDataButton" type="button" class="btn btn-default">Continue</button>
+
+				<div id="results"></div>
+			</form>
+
+    	</div><!-- /.col-sm-6 -->
+    	</div>
+    	
+    	<div id="updatedProfile">
+    	<div id="updatedProfileBackground">
+    		<!-- updated profile -->
+    		<div class="welcome"><h1 id='welcomeNewUserName'></h1></div>
+    		<div class="profileInfo">
+    			<h2 id='newUserName'></h2>
+    			<h3 id="newUserBirth"></h3>
+    			<h3 id="newUserGender"></h3>
+    			<h3 id="newUserColor"></h3>
+    			<h3 id="newUserEmail"></h3>
+    			<h3 id="newUserPhone"></h3>
+    		</div><!-- /#updatedProfile -->
+
+    	</div><!-- /.col-sm-6 -->
+    	
+
+    </div><!-- /.container -->
+		<script src="http://code.jquery.com/jquery-3.1.1.js" integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA=" crossorigin="anonymous"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+		<script src="js/main.js"></script>
+	</body>
+</html>
+
